@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
         EditText userName = (EditText) findViewById(R.id.userName);
         EditText password = (EditText) findViewById(R.id.password);
 
-        Log.i("Info", userName.getText().toString());
-        Log.i("Info", password.getText().toString());
+        Log.i("Username", userName.getText().toString());
+        Log.i("Password", password.getText().toString());
 
 
 
