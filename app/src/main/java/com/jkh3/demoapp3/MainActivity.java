@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Log.i("Username", userName.getText().toString());
         Log.i("Password", password.getText().toString());
 
-
+        // Displaying what was typed into 'Username' field by converting it to a string and putting it into a
+        //'Toast'. In this case it's a short popup
+        Toast.makeText(MainActivity.this, "Hello " + userName.getText().toString() + "!!", Toast.LENGTH_SHORT).show();
 
     }
 
